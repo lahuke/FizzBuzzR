@@ -18,8 +18,7 @@ $(document).ready(function() {
   }
   
   //On click the magic happens
-  $('.playButton').submit(function(event){
-  	event.preventDefault();
+  $('.playButton').on('click', function(){
     var getValue = $('.textInput').val();
     
    //Checking if the typed value is a number
