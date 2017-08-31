@@ -18,16 +18,21 @@ $(document).ready(function() {
   }
   
   //On click the magic happens
-  $('.playButton').on('click', function(){
+  $('.userInput').submit(function(event){
+    event.preventDefault();
     var getValue = $('.textInput').val();
     
    //Checking if the typed value is a number
-    if (getValue % 1 == 0 && getValue <= 100){
+    if (getValue === ""){
+      alert ("Please enter a number between 1 and 100")
+    }
+    else if (getValue % 1 == 0 && getValue <= 100){
       $('.content').empty();
-    	countNumbers(getValue);
-    	$('.textInput').val("");
-    }else{
-      alert('Enter a number between 1 and 100.');
+      countNumbers(getValue);
+      $('.textInput').val("");
+    }
+    else {
+      alert('Please enter a number between 1 and 100.');
       $('.textInput').val("");
     }
   });
