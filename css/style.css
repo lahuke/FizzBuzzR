@@ -9,7 +9,7 @@ h1 {
   border: 1px solid black;
   border-radius: 4px;
 }
-.playButton {
+button, .clearButton {
 	padding: 1em 1em;
 	background-color: hotpink;
 	border-radius: 4px;

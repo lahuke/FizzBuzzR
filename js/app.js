@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   }
   
-  //On click the magic happens
+  //On enter the magic happens
   $('.userInput').submit(function(event){
     event.preventDefault();
     var getValue = $('.textInput').val();
@@ -35,7 +35,12 @@ $(document).ready(function() {
       alert('Please enter a number between 1 and 100.');
       $('.textInput').val("");
     }
+      //on button click page is cleared
+   $('.content').on('click', '.clearButton', function(){
+    $('.content').cleared();
+  });
   });
 });
+
 
  
