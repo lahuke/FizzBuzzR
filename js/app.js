@@ -24,7 +24,7 @@ $(document).ready(function() {
     
    //Checking if the typed value is a number
     if (getValue === ""){
-      alert ("Please enter a number between 1 and 100")
+      alert ("Please enter a number between 1 and 100.")
     }
     else if (getValue % 1 == 0 && getValue <= 100){
       $('.content').empty();
